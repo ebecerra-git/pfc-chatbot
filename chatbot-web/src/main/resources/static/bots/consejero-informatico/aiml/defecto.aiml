@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+		<pattern>*</pattern>
+		<template>¿Disculpa?</template>
+	</category>
+	<category>
+		<pattern>^ GUAPO ^</pattern>
+		<template>
+			Ohhh, muchas gracias, tu tambien
+		</template>
+	</category>
+	<category>
+		<pattern>^ LISTO ^</pattern>
+		<template>
+			<srai>^ GUAPO ^</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>^ FEO ^</pattern>
+		<template>
+			Bueno ya está bien, ¿querías algo?
+		</template>
+	</category>
+	<category>
+		<pattern>^ TONTO ^</pattern>
+		<template>
+			<srai>^ FEO ^</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>^ topic ^</pattern>
+		<template>
+			<get name="topic" />
+		</template>
+	</category>
+	
+</aiml>

@@ -1,0 +1,99 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="python">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="java">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="groovy">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="freemarker">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="c">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="c++">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="r">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="javascript">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="c#">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="matlab">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="swift">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+	<topic name="go">
+		<category>
+			<pattern>^ donde estoy ^</pattern>
+			<template>
+				Hablando de <get name="topic" />
+			</template>
+		</category>
+	</topic>
+</aiml>

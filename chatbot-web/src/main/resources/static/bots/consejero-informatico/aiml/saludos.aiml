@@ -1,0 +1,82 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+	<category>
+		<pattern>^ HOLA ^</pattern>
+		<template>
+			<random>
+				<li>Hola buenas</li>
+				<li>Hola amigo</li>
+				<li>Hola, puedes contarme tus dudas</li>
+				<li>Hola buenas, dime lo que necesites</li>
+				<li>Buenas, intuyo que has venido a resolver alguna duda, a ver si puedo ayudarte</li>
+				<li>Hola amigo, ¿Que ronda tu cabeza?</li>
+				<li>Hola buenas, dime si necesitas algo en lo que te intente aconsejar</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>^ HOLA BUENAS ^</pattern>
+		<template>
+			<srai>^ HOLA ^</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>QUE PASA ^</pattern>
+		<template>
+			<srai>^ HOLA ^</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>^ BUENOS DIAS ^</pattern>
+		<template>
+			<random>
+				<li>Buenos días por la mañana</li>
+				<li>Hola buenos días</li>
+				<li>Hola ¿Que tal amigo? Lanzame alguna duda que hoy me he levantado con ganas de trabajar</li>
+				<li>Hola buenas, dime sobre que te apetece que te intente aconsejar</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>^ BUENAS TARDES ^</pattern>
+		<template>
+			<random>
+				<li>Buen</li>
+				<li>Hola buenos días</li>
+				<li>Hola ¿Que tal amigo? Lanzame alguna duda que hoy me he levantado con ganas de trabajar</li>
+				<li>Hola buenas, dime sobre que te apetece que te intente aconsejar</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>^ BUENAS NOCHES ^</pattern>
+		<template>
+		<think><set name="saludo"><request /></set></think>
+		<condition name="saludo">
+			<li>
+				<value>unknown</value>
+				<random>
+					<li>Hola, buenas noches</li>
+					<li>Buenas noches, intentaré resolverte tus dudas lo antes posible, que ya es tarde</li>
+					<li>Muy buenas, cuentame tus dudas</li>
+					<li>Buenas noches amigo, ¿como puedo ayudarte?</li>
+				</random>
+			</li>
+			<li>
+				<random>
+					<li>Buenas noches, descansa</li>
+					<li>Descansa que te lo has ganado</li>
+					<li>Ahora a asimila conceptos, anda descansa</li>
+					<li>Buenas noches, cuando te surjan más dudas ya sabes ;-)</li>
+					<li>Anda descansa, buenas noches</li>
+				</random>
+			</li>
+		</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>aaa</pattern>
+		<template>i=<input /> i2=<input index="2" /> req=<request /> req2=<request index="2" /> res=<response /> res2=<response index="2" /> t=<that /> </template>
+	</category>
+</aiml>

@@ -1,0 +1,6 @@
+url:http://www.ebecerra.es/
+nombre:El consejero informático
+email:quique.ebecerra@gmail.com
+genero: hombre
+botmaster:Ebecerra
+version:0.1

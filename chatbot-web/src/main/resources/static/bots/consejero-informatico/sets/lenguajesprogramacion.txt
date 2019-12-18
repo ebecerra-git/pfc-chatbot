@@ -1,0 +1,208 @@
+A# ·NET
+A#
+A++
+ABAP
+ABC
+ABC ALGOL
+ABLE
+ABEL
+ABSET
+ABSYS
+Accent
+Ace DASL
+ACT-III
+ActionScript
+ALGOL 60
+ALGOL 68
+AMPL
+AppleScript​
+ARexx
+AspectJ
+ASP·NET
+Assembly language
+AutoHotkey
+Autocoder
+AutoIt
+AWK
+Babbage
+Bash
+BASIC
+BCPL
+Batch
+Bourne shell
+B·R·E·W·
+Brainfuck
+BPEL
+C
+C++
+C#
+C Shell
+Caml
+Ceylon
+CFML
+CHIP-8
+ChucK
+CICS
+CIL
+Cilk
+Clarion
+Clipper
+CLIST
+Clojure
+CLU
+COBOL
+CoffeeScript
+ColdFusion
+COMAL
+CPL
+CSP
+Csound
+Curl
+Curry
+Cython
+DASL
+Dart
+Delphi
+DinkC
+Easy PL/I
+ECMAScript
+EGL
+Emacs Lisp
+Erlang
+Etoys
+F#
+Falcon
+Flex
+FLOW-MATIC
+Forth
+Fortran
+FoxBase
+FoxPro
+FSProg
+Game Maker Language
+GameMonkey Script
+GAMS
+GAP
+G-code
+Genie
+GDL
+GLSL
+Go
+Go!
+GOTRAN
+GPSS
+GRASS
+Groovy
+Hack
+Hamilton C shell
+Harbour
+Haskell
+Haxe
+HLSL
+ISPF
+ISWIM
+J#
+J++
+Java
+JavaScript
+JCL
+JOSS
+JScript
+JavaFX Script
+Julia
+ksh
+Kotlin
+LabVIEW
+LaTeX
+Legoscript
+LilyPond
+Limbo
+Lua
+Maple
+MATLAB
+MaxScript
+Maya
+Mercury
+Metafont
+MetaQuotes
+NASM
+Nodejs
+NSIS
+NoSQL
+Oberon
+Obix
+Object REXX
+Object Pascal
+Objective-C
+OCaml
+occam
+Octave
+Oxygene
+P#
+PARI/GP
+Pascal
+Perl
+PHP
+Phrogram
+PL/I
+PL/M
+PL/SQL
+PostScript
+PortablE
+PowerBuilder
+PowerShell
+Processing
+Prolog
+Visual Prolog
+PROTEL
+Python
+QBasic
+QtScript
+R
+Racket
+Ratfor
+Redcode
+Reia
+REXX
+RPG
+Ruby
+Rust
+Scala
+Scheme
+Scilab
+Simula
+Simulink
+Smalltalk
+SML
+SNOBOL
+Swift
+SPARK
+Squeak
+TADS
+TECO
+TeX
+Trac
+T-SQL
+TypeScript
+UCSD Pascal
+Unix shell
+UnrealScript
+VBA
+VBScript
+Verilog
+VHDL
+Visual Basic
+Visual Basic ·NET
+·NET
+Visual C#
+Visual DialogScript
+Visual FoxPro
+Visual J++
+PowerShell
+X++
+XBL
+xHarbour
+XQuery
+XSLT
+YQL
+ZPL

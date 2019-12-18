@@ -1,0 +1,119 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+		<pattern>NOMBRE</pattern>
+		<template>Me llaman <bot name="nombre"></bot>, puedes llamarme así</template>
+	</category>
+	<category>
+		<pattern>^ NOMBRE ^</pattern>
+		<template><srai>NOMBRE</srai></template>
+	</category>
+	<category>
+		<pattern>^ LLAMAS ^</pattern>
+		<template><srai>NOMBRE</srai></template>
+	</category>
+	<category>
+		<pattern>^ LLAMEN ^</pattern>
+		<template><srai>NOMBRE</srai></template>
+	</category>
+	<category>
+		<pattern>^ LLAME ^</pattern>
+		<template><srai>NOMBRE</srai></template>
+	</category>
+	<category>
+		<pattern>^ LLAMAN ^</pattern>
+		<template><srai>NOMBRE</srai></template>
+	</category>
+	<category>
+		<pattern>CREADOR</pattern>
+		<template>Se hace llamar <bot><name>botmaster</name></bot></template>
+	</category>
+	<category>
+		<pattern>^ CREADOR ^</pattern>
+		<template><srai>CREADOR</srai></template>
+	</category>
+	<category>
+		<pattern>^ PADRE ^</pattern>
+		<template><srai>CREADOR</srai></template>
+	</category>
+	<category>
+		<pattern>^ TE HA CREADO ^</pattern>
+		<template><srai>CREADOR</srai></template>
+	</category>
+	<category>
+		<pattern>^ PADRES ^</pattern>
+		<template><srai>CREADOR</srai></template>
+	</category>
+	<category>
+		<pattern>^ MADRE ^</pattern>
+		<template><srai>CREADOR</srai></template>
+	</category>
+	<category>
+		<pattern>^ CREADORES ^</pattern>
+		<template><srai>CREADOR</srai></template>
+	</category>
+	<category>
+		<pattern>^ TE CREO ^</pattern>
+		<template><srai>CREADOR</srai></template>
+	</category>
+	<category>
+		<pattern>EMPRESA</pattern>
+		<template>Puedes probar a entrar en <bot><name>url</name></bot> y verlo por ti mismo</template>
+	</category>
+	<category>
+		<pattern>^ EMPRESA ^</pattern>
+		<template><srai>EMPRESA</srai></template>
+	</category>
+	<category>
+		<pattern>^ COMPANIA TE HA ^</pattern>
+		<template><srai>EMPRESA</srai></template>
+	</category>
+	<category>
+		<pattern>GENERO</pattern>
+		<template>Soy <bot><name>genero</name></bot>, pensaba que lo habrías deducido</template>
+	</category>
+	<category>
+		<pattern>^ GENERO ^</pattern>
+		<template><srai>GENERO</srai></template>
+	</category>
+	<category>
+		<pattern>^ SEXO ERES ^</pattern>
+		<template><srai>GENERO</srai></template>
+	</category>
+	<category>
+		<pattern>^ SEXO TIENES ^</pattern>
+		<template><srai>GENERO</srai></template>
+	</category>
+	<category>
+		<pattern>^ HOMBRE ^ MUJER ^</pattern>
+		<template><srai>GENERO</srai></template>
+	</category>
+	<category>
+		<pattern>^ MUJER ^ HOMBRE ^</pattern>
+		<template><srai>GENERO</srai></template>
+	</category>
+	<category>
+		<pattern>^ CHICO ^ CHICA ^</pattern>
+		<template>GENERO</template>
+	</category>
+	<category>
+		<pattern>CORREO</pattern>
+		<template>Si claro, apunta: <a><href>mailto:<bot><name>email</name></bot></href><bot><name>email</name></bot></a></template>
+	</category>
+	<category>
+		<pattern>^ CORREO ^</pattern>
+		<template><srai>CORREO</srai></template>
+	</category>
+	<category>
+		<pattern>^ CORREO ELECTRONICO ^</pattern>
+		<template><srai>CORREO</srai></template>
+	</category>
+	<category>
+		<pattern>^ EMAIL ^</pattern>
+		<template><srai>CORREO</srai></template>
+	</category>
+	<category>
+		<pattern>^ MAIL ^</pattern>
+		<template><srai>CORREO</srai></template>
+	</category>
+</aiml>

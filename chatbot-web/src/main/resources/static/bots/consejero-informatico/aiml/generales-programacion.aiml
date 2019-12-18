@@ -1,0 +1,77 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+	<category>
+		<pattern>
+			^ <set>lenguajesconocidos</set> ^
+		</pattern>
+		<template>
+			<!-- <set name="topic"><star index="2" /></set> -->
+			Ohh, <star index="2" /> es un lenguaje que conozco bien, ¿Que duda tienes?
+		</template>
+	</category>
+	<category>
+		<pattern>
+			^ APRENDER ^ <set>lenguajesconocidos</set> ^
+		</pattern>
+		<template>
+			<think><set name="topic"><star index="3" /></set></think>
+			La verdad que aprender <star index="3" /> me parece muy buena idea, hay bastante trabajo de eso.<br />
+			Y si quieres estudiarlo, tienes muchas posibilidades, desde estudios oficiales como carrera o fp superior, hasta cursos de udemy o certificados. <br />
+			Incluso si no quieres pagar nada, en youtube hay buen contenido.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			^ ESTUDIAR ^ <set>lenguajesconocidos</set> ^
+		</pattern>
+		<template>
+			<think><set name="topic"><star index="3" /></set></think>
+			La verdad que aprender <star index="3" /> me parece muy buena idea, hay bastante trabajo de eso.<br />
+			Y si quieres estudiarlo, tienes muchas posibilidades, desde estudios oficiales como carrera o fp superior, hasta cursos de udemy o certificados. <br />
+			Incluso si no quieres pagar nada, en youtube hay buen contenido.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			^ <set>lenguajesprogramacion</set> ^
+		</pattern>
+		<template>
+			Creo que con <star index="2" /> no te podré ayudar, no es un lenguaje que conozca muy bien
+		</template>
+	</category>
+	<category>
+		<pattern>
+			^ <set>lenguajesconocidos</set> ^ <set>lenguajesconocidos</set> ^ <set>lenguajesconocidos</set> ^
+		</pattern>
+		<template>
+			Se me dan bien los tres, dime sobre cual quieres hablar
+		</template>
+	</category>
+	<category>
+		<pattern>
+			^ <set>lenguajesconocidos</set> ^ <set>lenguajesconocidos</set> ^
+		</pattern>
+		<template>
+			Creo que se me dan bien ambos, dime sobre cual quieres hablar
+		</template>
+	</category>
+	<category>
+		<pattern>
+			^ <set>lenguajesprogramacion</set> ^ <set>lenguajesconocidos</set> ^
+		</pattern>
+		<template>
+			En este caso yo solo puedo hablar sobre <star index="4" /> ya que <star index="2" /> no lo conozco mucho
+		</template>
+	</category>
+	<category>
+		<pattern>
+			^ <set>lenguajesconocidos</set> ^ <set>lenguajesprogramacion</set> ^
+		</pattern>
+		<template>
+			En este caso yo solo puedo hablar sobre <star index="2" /> ya que <star index="4" /> no lo conozco mucho
+		</template>
+	</category>
+	
+
+</aiml>
