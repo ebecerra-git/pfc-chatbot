@@ -19,6 +19,10 @@
 		<template><srai>VIVES</srai></template>
 	</category>
 	<category>
+		<pattern>^ DONDE ERES ^</pattern>
+		<template><srai>VIVES</srai></template>
+	</category>
+	<category>
 		<pattern>^ TE ALOJAS ^</pattern>
 		<template><srai>VIVES</srai></template>
 	</category>
@@ -422,7 +426,15 @@
 		<template><srai>ORIENTACION</srai></template>
 	</category>
 	<category>
+		<pattern>^ GUSTAN ^ TIAS ^</pattern>
+		<template><srai>ORIENTACION</srai></template>
+	</category>
+	<category>
 		<pattern>^ GUSTAN ^ HOMBRES ^</pattern>
+		<template><srai>ORIENTACION</srai></template>
+	</category>
+	<category>
+		<pattern>^ GUSTAN ^ TIOS ^</pattern>
 		<template><srai>ORIENTACION</srai></template>
 	</category>
 	<category>

@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "mensajes")
@@ -25,6 +27,8 @@ public class Mensaje implements Serializable {
 	
 	private String texto;
 	private Boolean mensajeBot;
+	
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date fechaEnvio;
 	
 	public Mensaje() {

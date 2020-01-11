@@ -7,4 +7,6 @@ $(document).ready(function(){
 		    $("#form-mensaje").submit();
 	    }
 	});
+	 
+	 document.getElementById("mensaje").focus()
 });
