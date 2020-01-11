@@ -1,0 +1,52 @@
+* {
+	marging: 0px;
+	paddign: 0px;
+}
+
+.cabecera {
+    padding: 1em 2em;
+}
+
+.cabecera * {
+	margin-bottom: 0px;
+}
+
+.noresize{
+	resize: none;
+}
+
+.container {
+	max-height: 100vh;
+}
+
+.contenido {
+	height: calc(100vh - 13em);
+    margin: 0.5em;
+    background-color: white;
+}
+
+.contenido > div {
+	height: inherit;
+	margin: 3px;
+	padding: 1em;
+}
+
+.contenido a:hover {
+	text-decoration: none;
+}
+
+.contenido a>div:hover {
+	box-shadow: 8px 6px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.sombreado-caja {
+	box-shadow: 8px 6px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.button {
+	cursor: pointer;
+}
+
+.bg-light-green {
+	background-color: var(--light-green);
+}
