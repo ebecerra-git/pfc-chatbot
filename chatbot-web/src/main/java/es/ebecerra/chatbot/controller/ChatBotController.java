@@ -68,6 +68,11 @@ public class ChatBotController {
 		return "chatbot";
 	}
 	
+	@GetMapping("/admin")
+	public String admin() {
+		return "redirect:/admin/conversaciones";
+	}
+	
 	public static void añadirAutenticacion(Model model) {
 		authentication = SecurityContextHolder.getContext().getAuthentication();
 		List<String> roles = authentication.getAuthorities().stream()

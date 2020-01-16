@@ -50,3 +50,7 @@
 .bg-light-green {
 	background-color: var(--light-green);
 }
+
+.custom-file-label::after {
+	content: "Seleccionar";	
+}

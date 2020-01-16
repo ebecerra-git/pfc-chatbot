@@ -29,6 +29,31 @@
 		</template>
 	</category>
 	<category>
+		<pattern>^ GRACIAS ^</pattern>
+		<template>
+			De nada, gracias a ti
+		</template>
+	</category>
+	<category>
+		<pattern>^ BUENAS ^</pattern>
+		<template>
+			Hola buenas
+		</template>
+	</category>
+	<category>
+		<pattern>^ QUE TAL ^</pattern>
+		<template>
+			Muy bien, gracias por preguntar, cualquier duda que tengas ya sabes
+		</template>
+	</category>
+	<category>
+		<pattern>^ COMO ESTAS ^</pattern>
+		<template>
+			<srai>^ QUE TAL ^</srai>
+		</template>
+	</category>
+	
+	<category>
 		<pattern>^ topic ^</pattern>
 		<template>
 			<get name="topic" />

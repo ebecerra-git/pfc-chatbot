@@ -21,16 +21,16 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		PasswordEncoder encoder = passwordEncoder();
 		UserBuilder users = User.builder().passwordEncoder(encoder::encode);
 		
-		builder.inMemoryAuthentication().withUser(users.username("admin").password("12345").roles("admin", "user"))
-										.withUser(users.username("quique").password("12345").roles("user"));
+		builder.inMemoryAuthentication().withUser(users.username("admin").password("12345").roles("ADMIN", "USER"))
+										.withUser(users.username("quique").password("12345").roles("USER"));
 	}
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
 		http.authorizeRequests().antMatchers("/", "/login", "/css/**", "/js/**", "/img/**", "/jquery/**", "/bootstrap/**").permitAll()
-								.antMatchers("/admin/comnversaciones/**").hasAnyRole("editor")
-								.antMatchers("/admin/comnversaciones/**").hasAnyRole("admin")
+								.antMatchers("/admin",  "/admin/comnversaciones", "/admin/comnversaciones/**").hasAnyRole("USER")
+								.antMatchers("/admin", "/admin/bot/**").hasAnyRole("ADMIN")
 								.anyRequest().authenticated()
 								.and()
 			.formLogin().permitAll().and()

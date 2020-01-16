@@ -33,7 +33,7 @@ public class ConsejeroInformatico {
 	}
 	
 	private String prepararMensajeRecibido(String mensaje) {
-		Pattern patt = Pattern.compile("\\.[^ ]+");
+		Pattern patt = Pattern.compile("\\.[^ |.]+");
 		Matcher mat = patt.matcher(mensaje);
 		while (mat.find()) {
 			mensaje = mensaje.replaceAll(mat.group(), mat.group().replace(".", "·"));

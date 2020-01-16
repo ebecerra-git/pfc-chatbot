@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>Chatbot</title>
+		<title>${titulo}</title>
 		<#include "imports/head.ftl">
 		<link rel="stylesheet" href="/css/estilos-chat.css">
 	</head>

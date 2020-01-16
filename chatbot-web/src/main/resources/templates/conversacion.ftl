@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Conversacion</title>
+		<title>${titulo}</title>
 		<#include "imports/head.ftl">
 		<link rel="stylesheet" href="/css/estilos-chat.css">
 	</head>

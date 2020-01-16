@@ -17,7 +17,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import es.ebecerra.chatbot.util.converter.model.AIML;
+import es.ebecerra.chatbot.util.model.CategoryAIML;
 
 public class BotFileConverter {
 	
@@ -71,10 +71,10 @@ public class BotFileConverter {
 		return propiedades;
 	}
 	
-	public static List<AIML> aimlConverter(File file){
+	public static List<CategoryAIML> aimlConverter(File file){
 		
 		
-		List<AIML> aimlList = new LinkedList<AIML>();
+		List<CategoryAIML> aimlList = new LinkedList<CategoryAIML>();
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -92,22 +92,22 @@ public class BotFileConverter {
 		
 	}
 	
-	private static void añadirNodosAIML(Node item, List<AIML> aimlList, String topic) {
+	private static void añadirNodosAIML(Node item, List<CategoryAIML> aimlList, String topic) {
 		if(item.getNodeName().contentEquals("category")) {
-			AIML aiml = new AIML();
+			CategoryAIML aiml = new CategoryAIML();
 			NodeList hijos = item.getChildNodes();
 			for(int i = 0; i < hijos.getLength(); i++) {
 				Node hijo = hijos.item(i);
 				if(hijo.getNodeName().contentEquals("pattern")) {
-					aiml.setPattern(hijo.getTextContent().trim());
+					aiml.setPattern(getTextNode(hijo).trim());
 				} else if(hijo.getNodeName().contentEquals("template")) {
-					aiml.setTemplate(hijo.getTextContent().trim());
+					aiml.setTemplate(getTextNode(hijo).trim());
 				} else if(hijo.getNodeName().contentEquals("that")) {
-					aiml.setThat(hijo.getTextContent().trim());
+					aiml.setThat(getTextNode(hijo).trim());
 				} else if(hijo.getNodeName().contentEquals("think")) {
-					aiml.setThink(hijo.getTextContent().trim());
+					aiml.setThink(getTextNode(hijo).trim());
 				} else if(hijo.getNodeName().contentEquals("condition")) {
-					aiml.setCondition(hijo.getTextContent().trim());
+					aiml.setCondition(getTextNode(hijo).trim());
 				} else if(topic != null && !topic.isEmpty()) {
 					aiml.setTopic(topic);
 				}
@@ -121,6 +121,28 @@ public class BotFileConverter {
 				añadirNodosAIML(hijo, aimlList, topicValue);
 			}
 		}
+	}
+	
+	private static String getTextNode(Node node) {
+		String text = "";
+		NodeList nodeList = node.getChildNodes();
+		for(int i = 0; i < nodeList.getLength(); i++) {
+			Node item = node.getChildNodes().item(i);
+			if(null == item.getNodeName() || item.getNodeName().contentEquals("#text")) {
+				text += item.getTextContent()+" ";
+			} else if (item.getNodeName().contentEquals("random")) {
+				text += "&lt;"+item.getNodeName()+"&gt;";
+				text += getTextNode(item);
+				text += "&lt;/"+item.getNodeName()+"&gt; ";
+			} else if (item.getNodeName().contentEquals("li")) {
+				text += "&lt;"+item.getNodeName()+"&gt;";
+				text += getTextNode(item);
+				text += "&lt;/"+item.getNodeName()+"&gt; ";
+			} else {
+				text += "&lt;"+item.getNodeName()+"&gt; "+item.getTextContent()+" &lt;/"+item.getNodeName()+"&gt; ";
+			}
+		}
+		return text;
 	}
 
 }

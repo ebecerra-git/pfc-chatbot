@@ -78,7 +78,7 @@
 " cierra parentesis ",")"
 " asterisco ","*"
 " ",""
-"puntos suspensivos","..."
+" puntos suspensivos ","..."
 " punto 0",".0"
 " punto 1",".1"
 " punto 2",".2"

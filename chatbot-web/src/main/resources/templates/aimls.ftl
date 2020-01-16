@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>AIML's</title>
+		<title>${titulo}</title>
 		<#include "imports/head.ftl">
 	</head>
 	<body class="bg-secondary">

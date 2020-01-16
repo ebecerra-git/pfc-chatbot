@@ -57,7 +57,7 @@ public class AdminConversacionesController {
 		model.addAttribute("hasNext", id < conversacionService.count());
 		model.addAttribute("hasPrevious", id > 1);
 		model.addAttribute("ultima", conversacionService.count());
-		model.addAttribute("pag", "conversacione");
+		model.addAttribute("pag", "conversacion");
 		return "conversacion";
 	}
 }

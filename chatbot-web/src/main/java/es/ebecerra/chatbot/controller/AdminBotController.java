@@ -15,12 +15,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import es.ebecerra.chatbot.ai.bot.ConsejeroInformatico;
 import es.ebecerra.chatbot.model.Conversacion;
 import es.ebecerra.chatbot.service.IConversacionService;
 import es.ebecerra.chatbot.service.IMensajeService;
+import es.ebecerra.chatbot.util.ImportarUtil;
 import es.ebecerra.chatbot.util.converter.BotFileConverter;
 
 @Controller
@@ -45,8 +49,24 @@ public class AdminBotController {
 		model.addAttribute("titulo", "AIML's");
 		model.addAttribute("pag", "aimls");
 		if(folder.exists()) {
-		List<String> enlaces = Arrays.asList(folder.listFiles()).stream().map(file -> file.getAbsolutePath().substring(file.getAbsolutePath().lastIndexOf(File.separator)+1)).collect(Collectors.toList());
-		model.addAttribute("enlaces", enlaces);
+			List<String> enlaces = Arrays.asList(folder.listFiles()).stream().map(aiml -> aiml.getAbsolutePath().substring(aiml.getAbsolutePath().lastIndexOf(File.separator)+1)).collect(Collectors.toList());
+			model.addAttribute("enlaces", enlaces);
+		}
+		return "aimls";
+	}
+	
+	@PostMapping("/aimls")
+	public String importExcel(Model model, @RequestParam(name = "action", defaultValue = "none") String action, @RequestParam("file") MultipartFile file) throws Exception{
+		ChatBotController.añadirAutenticacion(model);
+		if(action.contentEquals("import") && file != null) {
+			ImportarUtil.importExcelFile(file);
+		}
+		model.addAttribute("titulo", "AIML's");
+		model.addAttribute("pag", "aimls");
+		File folder = new ClassPathResource("/static/bots/consejero-informatico/aiml").getFile();
+		if(folder.exists()) {
+			List<String> enlaces = Arrays.asList(folder.listFiles()).stream().map(aiml -> aiml.getAbsolutePath().substring(aiml.getAbsolutePath().lastIndexOf(File.separator)+1)).collect(Collectors.toList());
+			model.addAttribute("enlaces", enlaces);
 		}
 		return "aimls";
 	}

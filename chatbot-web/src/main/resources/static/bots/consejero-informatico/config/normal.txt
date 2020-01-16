@@ -77,7 +77,7 @@
 "("," abre parentesis"
 ")"," cierra parentesis "
 ", "," , "
-"...","puntos suspensivos"
+"..."," puntos suspensivos "
 "/"," barra "
 ": 0"," 0"
 ": 1"," 1"

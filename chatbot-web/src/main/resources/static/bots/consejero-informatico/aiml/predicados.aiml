@@ -163,6 +163,14 @@
 		<template><srai>NACIMIENTO</srai></template>
 	</category>
 	<category>
+		<pattern>^ NACISTE EN ^</pattern>
+		<template><srai>NACIMIENTO</srai></template>
+	</category>
+	<category>
+		<pattern>^ NACISTES EN ^</pattern>
+		<template><srai>NACIMIENTO</srai></template>
+	</category>
+	<category>
 		<pattern>^ QUE SITIO ^ NACISTE ^</pattern>
 		<template><srai>NACIMIENTO</srai></template>
 	</category>

@@ -1,13 +1,25 @@
-package es.ebecerra.chatbot.util.converter.model;
+package es.ebecerra.chatbot.util.model;
 
-public class AIML {
+public class CategoryAIML {
 
 	private String topic;
 	private String pattern;
 	private String template;
+	private String srai;
 	private String that;
 	private String think;
 	private String condition;
+	
+	public CategoryAIML() {}
+	
+	public CategoryAIML(String pattern) {
+		this.pattern = pattern;
+	}
+	
+	public CategoryAIML(String pattern, String template) {
+		this(pattern);
+		this.template = template;
+	}
 	
 	public String getTopic() {
 		return topic;
@@ -44,6 +56,12 @@ public class AIML {
 	}
 	public void setCondition(String condition) {
 		this.condition = condition;
+	}
+	public String getSrai() {
+		return srai;
+	}
+	public void setSrai(String srai) {
+		this.srai = srai;
 	}
 	
 }

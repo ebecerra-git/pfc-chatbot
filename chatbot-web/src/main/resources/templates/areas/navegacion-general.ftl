@@ -10,6 +10,7 @@
 					<li class="nav-item-dark <#if pag! = "conversaciones">active</#if>">
 						<a class="nav-link" href="/admin/conversaciones">Conversaciones</a>
 					</li>
+					<#if autenticado && roles?join(" ")?contains("ROLE_ADMIN")>
 					<li class="nav-item">
 						<a class="nav-link <#if pag! = "aimls">active</#if>" href="/admin/bot/aimls">AIML's</a>
 					</li>
@@ -19,6 +20,7 @@
 					<li class="nav-item">
 						<a class="nav-link <#if pag! = "sets">active</#if>" href="/admin/bot/sets">Sets</a>
 					</li>
+					</#if>
 				</ul>
 			</div>
 		</nav>
