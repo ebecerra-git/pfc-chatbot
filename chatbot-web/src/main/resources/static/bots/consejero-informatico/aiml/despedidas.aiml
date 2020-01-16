@@ -1,4 +1,28 @@
 <?xml version = "1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+	<category>
+		<pattern>^ ADIOS ^</pattern>
+		<template>Hasta luego y muchas gracias por tu tiempo</template>
+	</category>
+	<category>
+		<pattern>^ HASTA LUEGO ^</pattern>
+		<template><srai>^ ADIOS </srai></template>
+	</category>
+	<category>
+		<pattern>^ HASTA MAÑANA ^</pattern>
+		<template><srai>^ ADIOS </srai></template>
+	</category>
+	<category>
+		<pattern>^ CHAO ^</pattern>
+		<template><srai>^ ADIOS </srai></template>
+	</category>
+	<category>
+		<pattern>^ XAO ^</pattern>
+		<template><srai>^ ADIOS </srai></template>
+	</category>
+	<category>
+		<pattern>^ ME VOY ^</pattern>
+		<template><srai>^ ADIOS </srai></template>
+	</category>
 
 </aiml>

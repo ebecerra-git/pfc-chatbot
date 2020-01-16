@@ -75,8 +75,8 @@
 		</condition>
 		</template>
 	</category>
-	<category>
+	<!-- <category>
 		<pattern>aaa</pattern>
 		<template>i=<input /> i2=<input index="2" /> req=<request /> req2=<request index="2" /> res=<response /> res2=<response index="2" /> t=<that /> </template>
-	</category>
+	</category> -->
 </aiml>
